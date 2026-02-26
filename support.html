@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviola Scout - Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1d1d1f; background: #fff; }
+        .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: #86868b; font-size: 14px; margin-bottom: 48px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 40px; margin-bottom: 12px; }
+        p, li { font-size: 15px; color: #424245; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-card { background: #f5f5f7; border-radius: 12px; padding: 24px; margin-top: 24px; }
+        .contact-card p { margin-bottom: 8px; }
+        .lang-toggle { text-align: right; margin-bottom: 24px; }
+        .lang-toggle a { font-size: 14px; color: #0066cc; text-decoration: none; }
+        .lang-toggle a:hover { text-decoration: underline; }
+        .section-en { display: none; }
+    </style>
+    <script>
+        function toggleLang(lang) {
+            document.querySelectorAll('.section-ko').forEach(el => el.style.display = lang === 'ko' ? 'block' : 'none');
+            document.querySelectorAll('.section-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="lang-toggle">
+        <a href="javascript:toggleLang('ko')">한국어</a> | <a href="javascript:toggleLang('en')">English</a>
+    </div>
+
+    <!-- Korean -->
+    <div class="section-ko">
+        <h1>고객 지원</h1>
+        <p class="subtitle">Moviola Scout</p>
+
+        <h2>자주 묻는 질문</h2>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. 웹앱과 어떻게 연결하나요?</h3>
+        <p>Moviola 웹앱에서 QR 코드를 표시한 뒤, Moviola Scout 앱에서 스캔하면 즉시 연결됩니다.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. 어떤 ControlNet 모드를 지원하나요?</h3>
+        <p>Pose, Depth, Canny, Lineart, MLSD 총 5가지 모드를 지원합니다.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. 이미지가 전송되지 않아요.</h3>
+        <p>Wi-Fi 또는 셀룰러 네트워크 연결을 확인해 주세요. 전송 실패 시 자동으로 재시도되며, 촬영 히스토리에서 수동으로 재전송할 수도 있습니다.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. 계정을 삭제하고 싶어요.</h3>
+        <p>아래 이메일로 계정 삭제를 요청해 주세요. 모든 데이터가 영구적으로 삭제됩니다.</p>
+
+        <div class="contact-card">
+            <h2 style="margin-top:0;">문의하기</h2>
+            <p>이메일: <a href="mailto:kimjungho@ixiworks.com">kimjungho@ixiworks.com</a></p>
+            <p>GitHub: <a href="https://github.com/IXIWORKS-KIMJUNGHO/StoryBoard-ComfyUI/issues" target="_blank">이슈 등록</a></p>
+        </div>
+    </div>
+
+    <!-- English -->
+    <div class="section-en">
+        <h1>Support</h1>
+        <p class="subtitle">Moviola Scout</p>
+
+        <h2>FAQ</h2>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. How do I connect to the web app?</h3>
+        <p>Display the QR code on the Moviola web app, then scan it with the Moviola Scout app to connect instantly.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. Which ControlNet modes are supported?</h3>
+        <p>Five modes are supported: Pose, Depth, Canny, Lineart, and MLSD.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. My images aren't being sent.</h3>
+        <p>Please check your Wi-Fi or cellular connection. Failed transfers are automatically retried, and you can manually resend from the capture history.</p>
+
+        <h3 style="font-size:16px; margin-top:24px; margin-bottom:8px;">Q. I want to delete my account.</h3>
+        <p>Please request account deletion via email below. All data will be permanently deleted.</p>
+
+        <div class="contact-card">
+            <h2 style="margin-top:0;">Contact Us</h2>
+            <p>Email: <a href="mailto:kimjungho@ixiworks.com">kimjungho@ixiworks.com</a></p>
+            <p>GitHub: <a href="https://github.com/IXIWORKS-KIMJUNGHO/StoryBoard-ComfyUI/issues" target="_blank">Open an Issue</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

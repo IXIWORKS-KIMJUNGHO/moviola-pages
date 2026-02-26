@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviola Scout - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1d1d1f; background: #fff; }
+        .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .subtitle { color: #86868b; font-size: 14px; margin-bottom: 48px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 40px; margin-bottom: 12px; }
+        p, li { font-size: 15px; color: #424245; margin-bottom: 12px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e5e5e7; font-size: 14px; }
+        th { font-weight: 600; color: #1d1d1f; background: #f5f5f7; }
+        td { color: #424245; }
+        .lang-toggle { text-align: right; margin-bottom: 24px; }
+        .lang-toggle a { font-size: 14px; color: #0066cc; text-decoration: none; }
+        .lang-toggle a:hover { text-decoration: underline; }
+        .section-en { display: none; }
+    </style>
+    <script>
+        function toggleLang(lang) {
+            document.querySelectorAll('.section-ko').forEach(el => el.style.display = lang === 'ko' ? 'block' : 'none');
+            document.querySelectorAll('.section-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="lang-toggle">
+        <a href="javascript:toggleLang('ko')">한국어</a> | <a href="javascript:toggleLang('en')">English</a>
+    </div>
+
+    <!-- Korean -->
+    <div class="section-ko">
+        <h1>개인정보처리방침</h1>
+        <p class="subtitle">Moviola Scout &middot; 최종 업데이트: 2026년 2월 26일</p>
+
+        <h2>1. 수집하는 정보</h2>
+        <table>
+            <tr><th>항목</th><th>수집 목적</th><th>보관 기간</th></tr>
+            <tr><td>Google 계정 정보 (이메일, 이름, 프로필 사진)</td><td>로그인 및 사용자 식별</td><td>계정 삭제 시까지</td></tr>
+            <tr><td>촬영 이미지</td><td>AI 스토리보드 생성을 위한 ControlNet 레퍼런스</td><td>서버 전송 후 프로젝트 내 보관, 프로젝트 삭제 시 함께 삭제</td></tr>
+            <tr><td>기기 정보 (기기 모델, OS 버전)</td><td>앱 안정성 및 호환성 확인</td><td>세션 종료 시 삭제</td></tr>
+        </table>
+
+        <h2>2. 카메라 및 사진 라이브러리 접근</h2>
+        <p>Moviola Scout는 스토리보드 생성을 위한 레퍼런스 이미지를 촬영하기 위해 카메라에 접근합니다. 촬영된 이미지를 저장하기 위해 사진 라이브러리에 접근할 수 있습니다. 카메라와 사진 라이브러리 접근은 사용자가 명시적으로 허용한 경우에만 이루어집니다.</p>
+
+        <h2>3. 정보의 이용</h2>
+        <ul>
+            <li>촬영한 이미지를 서버로 전송하여 AI 스토리보드를 생성합니다.</li>
+            <li>Google 계정 정보를 통해 사용자를 식별하고 프로젝트 접근 권한을 관리합니다.</li>
+            <li>수집된 정보는 광고 목적으로 사용되지 않습니다.</li>
+        </ul>
+
+        <h2>4. 정보의 공유</h2>
+        <p>수집된 개인정보는 제3자에게 판매하거나 공유하지 않습니다. 다만, 다음의 경우에 한하여 정보를 제공할 수 있습니다:</p>
+        <ul>
+            <li>사용자가 속한 프로젝트의 팀원에게 촬영 이미지가 공유됩니다.</li>
+            <li>법률에 의해 요구되는 경우.</li>
+        </ul>
+
+        <h2>5. 제3자 서비스</h2>
+        <table>
+            <tr><th>서비스</th><th>목적</th><th>개인정보처리방침</th></tr>
+            <tr><td>Firebase Authentication</td><td>사용자 인증</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase 개인정보처리방침</a></td></tr>
+            <tr><td>Google Sign-In</td><td>소셜 로그인</td><td><a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></td></tr>
+        </table>
+
+        <h2>6. 데이터 보안</h2>
+        <p>이미지 전송 시 HTTPS 암호화 통신을 사용합니다. 페어링 세션은 토큰 기반으로 관리되며 24시간 후 만료됩니다.</p>
+
+        <h2>7. 사용자의 권리</h2>
+        <ul>
+            <li>계정 삭제를 요청할 수 있습니다.</li>
+            <li>업로드된 이미지의 삭제를 요청할 수 있습니다.</li>
+            <li>카메라 및 사진 라이브러리 접근 권한을 언제든 기기 설정에서 해제할 수 있습니다.</li>
+        </ul>
+
+        <h2>8. 아동 개인정보</h2>
+        <p>Moviola Scout는 만 14세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+        <h2>9. 변경 사항</h2>
+        <p>본 개인정보처리방침은 변경될 수 있으며, 변경 시 앱 내 또는 이 페이지를 통해 공지합니다.</p>
+
+        <h2>10. 문의</h2>
+        <p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
+        <p>이메일: <a href="mailto:kimjungho@ixiworks.com">kimjungho@ixiworks.com</a></p>
+    </div>
+
+    <!-- English -->
+    <div class="section-en">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Moviola Scout &middot; Last updated: February 26, 2026</p>
+
+        <h2>1. Information We Collect</h2>
+        <table>
+            <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
+            <tr><td>Google account info (email, name, profile photo)</td><td>Login and user identification</td><td>Until account deletion</td></tr>
+            <tr><td>Captured images</td><td>ControlNet reference for AI storyboard generation</td><td>Stored within project; deleted when project is deleted</td></tr>
+            <tr><td>Device info (model, OS version)</td><td>App stability and compatibility</td><td>Deleted at session end</td></tr>
+        </table>
+
+        <h2>2. Camera and Photo Library Access</h2>
+        <p>Moviola Scout accesses your camera to capture reference images for storyboard generation. It may access your photo library to save captured images. Access is only granted with your explicit permission.</p>
+
+        <h2>3. How We Use Information</h2>
+        <ul>
+            <li>Captured images are sent to the server to generate AI storyboards.</li>
+            <li>Google account info is used to identify users and manage project access.</li>
+            <li>Collected information is never used for advertising purposes.</li>
+        </ul>
+
+        <h2>4. Information Sharing</h2>
+        <p>We do not sell or share your personal information with third parties, except:</p>
+        <ul>
+            <li>Captured images are shared with team members within your project.</li>
+            <li>When required by law.</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+        <table>
+            <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+            <tr><td>Firebase Authentication</td><td>User authentication</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></td></tr>
+            <tr><td>Google Sign-In</td><td>Social login</td><td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td></tr>
+        </table>
+
+        <h2>6. Data Security</h2>
+        <p>Image transfers use HTTPS encryption. Pairing sessions are managed with tokens that expire after 24 hours.</p>
+
+        <h2>7. Your Rights</h2>
+        <ul>
+            <li>You can request account deletion.</li>
+            <li>You can request deletion of uploaded images.</li>
+            <li>You can revoke camera and photo library access at any time in device settings.</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Moviola Scout is not intended for children under 14 and does not knowingly collect personal information from children.</p>
+
+        <h2>9. Changes</h2>
+        <p>This privacy policy may be updated. Changes will be communicated through the app or this page.</p>
+
+        <h2>10. Contact</h2>
+        <p>For privacy-related inquiries, contact us at:</p>
+        <p>Email: <a href="mailto:kimjungho@ixiworks.com">kimjungho@ixiworks.com</a></p>
+    </div>
+</div>
+</body>
+</html>
